@@ -43,5 +43,5 @@ jobs:
             docker rm yt-api || true
             docker run -d --name yt-api -p 7777:3000 \
               -e PORT=3000 \
-              -e YOUTUBE_API_KEY=UCTHw8MbUNpv9DKcXtPOaYTA \
+              -e YOUTUBE_API_KEY=${{ secrets.YOUTUBE_API_KEY }} \
               ${{ secrets.DOCKERHUB_USERNAME }}/yt-api:latest
