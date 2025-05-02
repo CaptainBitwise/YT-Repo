@@ -7,7 +7,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors({
-  origin: ['https://jeim-music.vercel.app/'],
+  origin: ['https://jeim-music.vercel.app'],
   credentials: true,
   
 }));
